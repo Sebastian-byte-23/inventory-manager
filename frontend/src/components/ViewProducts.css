@@ -1,0 +1,170 @@
+/* Estilo global para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente */
+    background-color: #f4f4f4; /* Color de fondo del cuerpo */
+    margin: 0; /* Elimina márgenes predeterminados */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* Envuelve toda la página en un contenedor */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Estilo para el encabezado principal */
+.header {
+    color: #000000; /* Color del texto blanco */
+    padding-top: 200px; /* Espaciado interno */
+    font-size: 1.5em; /* Tamaño de fuente grande */
+    text-align: center;
+    font-style: italic; /* Centra el texto */
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+    padding: 20px; /* Espaciado interno */ /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+ /* Sombra sutil */
+    overflow: auto; /* Agrega scroll si el contenido excede el área visible */
+}
+
+/* Estilo para el pie de página */
+.footer {
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+/* Estilo para la sección de acciones (botones) */
+.actions-container {
+    display: flex; /* Usa flexbox para alinear los botones */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 20px; /* Espaciado inferior */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en pantallas más pequeñas */
+}
+
+/* Estilo para la sección de filtros */
+.filter-section {
+    display: flex; /* Usa flexbox para organizar los filtros */
+    flex-direction: column; /* Organiza los filtros en una columna */
+    gap: 10px; /* Espacio entre los filtros */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para los filtros de precio y cantidad */
+.price-quantity-filters {
+    display: flex; /* Usa flexbox para alinear los filtros */
+    flex-wrap: wrap; /* Permite que los filtros se ajusten en pantallas más pequeñas */
+    gap: 10px; /* Espacio entre los filtros */
+}
+
+/* Estilo para el contenedor de la tabla */
+.table-container {
+    width: 100%; /* Ancho completo del contenedor */
+    max-height: 500px; /* Altura máxima para el contenedor */
+    overflow: auto; /* Permite el desplazamiento si la tabla excede la altura máxima */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+}
+
+/* Estilo para celdas de encabezado y datos */
+.table th, .table td {
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para celdas de encabezado */
+.table th {
+    background-color: #343a40; /* Color de fondo oscuro para los encabezados */
+    color: #ffffff; /* Color del texto blanco en los encabezados */
+    font-weight: bold;
+}
+
+/* Estilo para celdas de datos */
+.table td {
+    vertical-align: middle; /* Alineación vertical en el centro */
+}
+
+/* Estilo para el botón de acción dentro de la tabla */
+.table .action-button {
+    padding: 0; /* Sin espaciado interno */
+    border: none; /* Sin borde */
+    background: none; /* Sin fondo */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+}
+
+/* Estilo para imágenes dentro de los botones de acción */
+.table .action-button img {
+    width: 24px; /* Ancho de la imagen */
+    height: 24px; /* Alto de la imagen */
+    vertical-align: middle; /* Alineación vertical en el centro */
+}
+
+/* Estilo para el botón de acción al pasar el mouse */
+.table .action-button:hover img {
+    opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
+}
+
+/* Estilo específico para celdas de fecha en la tabla */
+.table td.date-cell {
+    border: none; /* Sin borde */
+    background: transparent; /* Fondo transparente */
+    padding: 0; /* Sin espaciado interno */
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+/* Estilo para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño */
+    }
+
+    .actions-container {
+        flex-direction: column; /* Organiza los botones en una columna */
+        align-items: flex-start; /* Alineación a la izquierda */
+    }
+
+    .price-quantity-filters {
+        flex-direction: column; /* Organiza los filtros en una columna */
+    }
+
+    .table th, .table td {
+        font-size: 14px; /* Tamaño de fuente más pequeño para tablas */
+    }
+
+    .dialog {
+        width: 90%; /* Ancho del diálogo en pantallas pequeñas */
+        max-width: 90%; /* Ancho máximo del diálogo */
+    }
+}
+
+/* Estilo para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .header {
+        font-size: 1em; /* Tamaño de fuente más pequeño */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Ajuste en el espaciado interno */
+        font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    }
+
+    .price-quantity-filters input {
+        width: 100%; /* Hace que los campos de entrada ocupen todo el ancho disponible */
+    }
+}

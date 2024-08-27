@@ -1,0 +1,26 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.alert-dismissible .btn-close {
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,220 @@
+/* ViewProductsByCategory.css */
+
+/* Estilo global para el cuerpo de la página */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    overflow: y -50px;
+}
+
+/* Estilo para el contenedor principal */
+.view-products-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%; /* Fondo gris claro para todo el contenido */
+    padding: 20px; /* Espaciado interno para el contenedor */
+    overflow: 50px auto; /* Incluye el padding en el tamaño total del contenedor */
+}
+
+/* Estilo para el encabezado principal */
+h4 {
+    padding-top: 300px;
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 1.5em; /* Tamaño de fuente grande */
+}
+
+/* Estilo para el formulario */
+.form-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para la sección de agregar categoría */
+.add-category-section {
+    margin-top: 20px;
+}
+
+/* Estilo para el botón de eliminar categoría */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Estilo para la sección de snackbar */
+.snackbar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el mensaje de no hay productos */
+.no-products {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Estilo para el contenedor de la tabla */
+.table-container {
+    flex: 1; /* Expande el contenedor para ocupar el espacio restante */
+    width: 100%;
+    padding-top: 20px; /* Espaciado adicional en la parte superior */
+    overflow: auto; /* Oculta el desbordamiento para evitar desplazamiento no deseado */
+}
+
+/* Estilo para la tabla */
+.table-wrapper {
+    height: calc(100vh - 160px); /* Ajusta la altura de la tabla */
+    overflow: auto; /* Agrega barra de desplazamiento si el contenido excede la altura del contenedor */
+    padding: 0 15px; /* Espaciado horizontal para mostrar la barra de desplazamiento */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para celdas de encabezado y datos */
+.table th, .table td {
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para celdas de encabezado */
+.table th {
+    background-color: #343a40; /* Color de fondo oscuro para los encabezados */
+    color: #ffffff; /* Color del texto blanco en los encabezados */
+    font-weight: bold;
+}
+
+/* Estilo para celdas de datos */
+.table td {
+    vertical-align: middle; /* Alineación vertical en el centro */
+}
+
+/* Estilo para el botón de acción dentro de la tabla */
+.table .action-button {
+    padding: 0; /* Sin espaciado interno */
+    border: none; /* Sin borde */
+    background: none; /* Sin fondo */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+}
+
+/* Estilo para imágenes dentro de los botones de acción */
+.table .action-button img {
+    width: 24px; /* Ancho de la imagen */
+    height: 24px; /* Alto de la imagen */
+    vertical-align: middle; /* Alineación vertical en el centro */
+}
+
+/* Estilo para el botón de acción al pasar el mouse */
+.table .action-button:hover img {
+    opacity: 0.8; /* Reduce la opacidad al pasar el mouse */
+}
+
+/* Estilo para el diálogo modal */
+.modal.fade.show {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.modal-content {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+/* Estilo para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .view-products-body {
+        padding: 10px; /* Espaciado interno para pantallas pequeñas */
+    }
+
+    .table th, .table td {
+        font-size: 14px; /* Tamaño de fuente más pequeño para tablas */
+    }
+
+    .modal-dialog {
+        width: 90%; /* Ancho del diálogo en pantallas pequeñas */
+        max-width: 90%; /* Ancho máximo del diálogo */
+    }
+}
+
+/* Estilo para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .view-products-body {
+        padding: 5px; /* Espaciado interno para pantallas más pequeñas */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Ajuste en el espaciado interno */
+        font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    }
+
+    .form-select {
+        font-size: 0.9em; /* Tamaño de fuente más pequeño para el selector */
+    }
+}

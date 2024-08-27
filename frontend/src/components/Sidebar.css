@@ -1,0 +1,91 @@
+/* Estilos para el Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #007bff; /* Color de fondo más llamativo */
+    border-right: 1px solid #0056b3; /* Color de borde más oscuro para contraste */
+    transition: transform 0.3s ease; /* Transición suave */
+    transform: translateX(-100%); /* Inicialmente oculto */
+    z-index: 1040; /* Asegúrate de que esté debajo del AppBar */
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Mostrar el menú */
+  }
+  
+  /* Estilos para el encabezado del Sidebar */
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0056b3; /* Color de fondo del encabezado */
+  }
+  
+  .sidebar-title {
+    color: #ffffff; /* Color del texto del título */
+    font-size: 1.5rem;
+  }
+  
+  .btn-close {
+    background: none;
+    border: none;
+    color: #ffffff; /* Color del botón de cerrar */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .btn-close:hover {
+    color: #e3f2fd; /* Color del botón al pasar el ratón */
+  }
+  
+  /* Estilos para la lista del menú */
+  .sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-item {
+    display: block;
+    color: #ffffff; /* Color del texto de los enlaces */
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #004085; /* Color del borde inferior de los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar-item:hover,
+  .sidebar-item.active {
+    background-color: #004085; /* Color de fondo al pasar el ratón o cuando está activo */
+    color: #ffffff; /* Color del texto al pasar el ratón o cuando está activo */
+  }
+  
+  /* Estilo para el pie del Sidebar */
+  .sidebar-footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #0056b3; /* Color de fondo del pie */
+  }
+  
+  .btn-logout {
+    width: 100%;
+    background-color: #dc3545; /* Color de fondo del botón de cerrar sesión */
+    color: #ffffff; /* Color del texto del botón de cerrar sesión */
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-logout:hover {
+    background-color: #c82333; /* Color de fondo al pasar el ratón sobre el botón de cerrar sesión */
+  }
+  

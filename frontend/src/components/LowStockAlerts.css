@@ -1,0 +1,86 @@
+/* LowStockAlerts.css */
+
+/* Estilo general para el body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+
+/* Estilo general para las alertas de stock bajo */
+.low-stock-alerts {
+    padding: 20px;
+    max-width: 100%; /* Ancho completo */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f5f5f5; /* Fondo gris claro */
+    height: 100vh; /* Altura completa del viewport */
+    overflow: auto; /* Agregar desplazamiento si es necesario */
+}
+
+/* Estilo para el encabezado */
+.low-stock-alerts h3 {
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    color: #333;
+    padding-top: 30px; /* Color de texto oscuro */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-weight: 700; /* Fuente más negrita */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    background-color: #ffffff; /* Color de fondo de la tabla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border: 1px solid #dee2e6; /* Borde para la tabla */
+    max-height: calc(100vh - 120px); /* Altura máxima menos el margen superior e inferior */
+    overflow-y: auto; /* Barra de desplazamiento vertical */
+    display: block; /* Necesario para el desbordamiento vertical */
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6; /* Color del borde de celdas */
+}
+
+.table th {
+    background-color: #343a40; /* Color de fondo de los encabezados */
+    color: #ffffff; /* Color del texto en los encabezados */
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff; /* Borde inferior más grueso en los encabezados */
+}
+
+.table td {
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6; /* Borde superior en las celdas */
+}
+
+.table tbody tr {
+    background-color: #f8f9fa; /* Color de fondo gris claro para todas las filas */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #e9ecef; /* Color gris claro para las filas pares */
+}
+
+.table tbody tr:hover {
+    background-color: #e2e6ea; /* Color de fondo al pasar el mouse sobre una fila */
+}
+
+.spinner-border {
+    display: block;
+    margin: 20px auto; /* Centra el spinner y añade margen superior e inferior */
+}
+
+.alert {
+    margin: 20px auto; /* Centra la alerta y añade margen superior e inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    max-width: 600px; /* Ancho máximo para la alerta */
+    text-align: center; /* Centra el texto */
+}

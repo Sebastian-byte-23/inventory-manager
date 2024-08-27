@@ -1,0 +1,45 @@
+/* AuthPage.module.css */
+
+.auth-page-container {
+    padding-top: 350px; /* Eliminar padding excesivo que causa la barra de desplazamiento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Evitar la barra de desplazamiento */
+    box-sizing: border-box; /* Asegura que el padding no cause scroll */
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para el contenedor */
+    background-color: #fff; /* Fondo blanco para mejor contraste */
+    box-sizing: border-box; /* Asegura que el padding no cause scroll */
+}
+
+.auth-title {
+    padding-top: 20px;
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Centrar título */
+}
+
+.auth-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.auth-tab {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.auth-content {
+    padding-top: 20px;
+}

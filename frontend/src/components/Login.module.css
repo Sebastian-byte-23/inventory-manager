@@ -1,0 +1,69 @@
+/* Login.module.css */
+
+.container {
+    max-width: 1140px; /* Ajusta este valor según el tamaño máximo deseado */
+    margin: 0 auto;
+    padding: 0 15px; /* Añade un poco de padding lateral para espaciar el contenido */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade un ligero sombreado */
+    background-color: #fff; /* Añade un fondo blanco al formulario */
+}
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.alert {
+    border-radius: 5px;
+    margin-top: 1rem;
+}

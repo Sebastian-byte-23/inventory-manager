@@ -1,0 +1,100 @@
+/* register.module.css */
+
+/* Estilo para el contenedor principal que centra todo el contenido */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Fondo gris claro */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Limita el ancho máximo del formulario */
+    padding: 2rem; /* Añade relleno alrededor del formulario */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ddd; /* Borde sutil alrededor del formulario */
+    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el tamaño total */
+}
+
+/* Estilo para el título del formulario */
+.form-title {
+    margin-bottom: 1.5rem; /* Espacio debajo del título */
+    text-align: center; /* Centra el título */
+    font-size: 1.75rem; /* Tamaño de fuente del título */
+    color: #007bff; /* Color azul para el título */
+    font-weight: 600; /* Fuente negrita */
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 1.5rem; /* Espacio entre los grupos de formulario */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+.form-group label {
+    font-size: 1rem; /* Tamaño de fuente de las etiquetas */
+    color: #555; /* Color gris oscuro para las etiquetas */
+    margin-bottom: 0.5rem; /* Espacio debajo de las etiquetas */
+    display: block; /* Asegura que las etiquetas ocupen el ancho completo */
+}
+
+/* Estilo para los campos de entrada del formulario */
+.form-control {
+    width: 100%; /* Asegura que los campos ocupen el ancho completo de su contenedor */
+    padding: 0.75rem; /* Relleno interno para los campos */
+    font-size: 1rem; /* Tamaño de fuente dentro de los campos */
+    color: #333; /* Color de texto dentro de los campos */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde sutil en los campos */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del campo */
+}
+
+/* Estilo para los campos de entrada del formulario en estado focus */
+.form-control:focus {
+    border-color: #007bff; /* Borde azul al enfocar el campo */
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra sutil en el enfoque */
+}
+
+/* Estilo para el botón de envío */
+.submit-btn {
+    width: 100%; /* Asegura que el botón ocupe el ancho completo */
+    padding: 0.75rem; /* Relleno interno para el botón */
+    font-size: 1rem; /* Tamaño de fuente en el botón */
+    background-color: #007bff; /* Color de fondo azul */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto blanco */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo para el botón de envío en estado hover */
+.submit-btn:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro en hover */
+    transform: translateY(-2px); /* Eleva el botón ligeramente en hover */
+}
+
+/* Estilo para el botón de envío en estado active */
+.submit-btn:active {
+    background-color: #004494; /* Color más oscuro al hacer clic */
+    transform: translateY(0); /* Restablece la posición al hacer clic */
+}
+
+/* Estilo para el contenedor de la alerta */
+.snackbar {
+    width: 100%; /* Asegura que el snackbar ocupe el ancho completo del contenedor */
+}
+
+/* Estilo para la alerta dentro del snackbar */
+.alert {
+    width: 100%; /* Asegura que la alerta ocupe el ancho completo */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}

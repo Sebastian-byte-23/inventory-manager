@@ -1,0 +1,81 @@
+/* ManageProviders.css */
+
+.manage-providers {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.manage-providers h4 {
+    padding-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.custom-snackbar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    min-width: 250px;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert .btn-close {
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    line-height: 1;
+    opacity: 0.6;
+}
+
+.alert .btn-close:hover {
+    opacity: 1;
+}
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+.modal-title {
+    color: #495057;
+}
+
+.close {
+    font-size: 1.5rem;
+    color: #000;
+    opacity: 0.5;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    opacity: 0.75;
+}

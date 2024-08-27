@@ -1,0 +1,23 @@
+/* AppBar.css */
+
+.appbar {
+  background-color: #343a40; /* Fondo oscuro para el AppBar */
+  color: #ffffff; /* Color del texto en blanco */
+  height: 64px; /* Altura del AppBar */
+  padding: 0 16px; /* Espaciado interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el AppBar */
+  position: sticky; /* Fijar el AppBar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que el AppBar ocupe todo el ancho */
+  z-index: 1100; /* Asegura que el AppBar esté encima del contenido */
+}
+
+.appbar-title {
+  font-size: 1.5rem; /* Tamaño del texto del título */
+  font-weight: bold; /* Negrita para el título */
+}
+
+.appbar-icon {
+  color: #ffffff; /* Color de los iconos en blanco */
+}

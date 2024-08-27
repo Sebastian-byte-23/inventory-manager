@@ -1,0 +1,58 @@
+/* src/components/PointOfSale.css */
+
+.point-of-sale-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.point-of-sale-header {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.point-of-sale-text-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.point-of-sale-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.point-of-sale-button:hover {
+    background-color: #0056b3;
+}
+
+.point-of-sale-error-alert {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.point-of-sale-product-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
